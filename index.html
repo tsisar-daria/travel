@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Travel</title>
+</head>
+<body>
+    <header>
+            <div class="logo">Travel</div>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+              </ul>
+              <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </nav>
+    </header>
+
+    <div class="top_image">
+        <img src="https://images.unsplash.com/photo-1491555103944-7c647fd857e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+
+    <div class="form">
+        <p class="way">Обрати маршрут</p>
+        <form onsubmit="return getData(this)">
+            <select id="cities" name="city">
+                <option value="default" disabled selected>Оберіть ваше місто</option>
+                <option value="Київ">Київ</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Львів">Львів</option>
+                <option value="Умань">Умань</option>
+                <option value="Черкаси">Черкаси</option>
+            </select>
+            <input type="date" id="startDate">
+            <input type="date" id="endDate">
+            <button>Обрати</button>
+        </form>
+    </div>
+
+    <div class="line-container">
+        <svg viewBox="0 0 1350 1900" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 0
+          C3 102 18 271 55 337
+          C91 403 186 603 622 457
+          C971 343 1164 509 1210 550
+          C1283 618 1356 767 1197 951
+          C1038 1134 451 1134 190 1139
+          C52 1141 -46 1216 25 1349
+          C97 1482 512 1608 711 1654
+          C836 1676 1088 1732 1103 1777"
+          stroke="black" fill="transparent" stroke-width="2"/>
+      
+          <circle cx="55" cy="337" r="7" fill="black" /> 
+          <circle cx="1210" cy="550" r="7" fill="black" />
+          <circle cx="190" cy="1139" r="7" fill="black" />
+          <circle cx="1103" cy="1777" r="7" fill="black" />
+        </svg>
+
+        <div class="point-text">
+            <div class="left-text">
+                <h3>Гора Маттерхорн</h3>
+                <p>Маттерхорн - символ Альп: неперевершена краса та виклик вершини.</p>
+            </div>
+            <div class="right-image">
+                <img src="https://plus.unsplash.com/premium_photo-1677072477215-ad9441169da4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" />
+            </div>
+
+
+            <div class="left-image">
+                <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" />
+            </div>
+            <div class="right-text">
+                <h3>Хребет Юнгфрауйох</h3>
+                <p>вражаючий гірський хребет, розташований в  Альпах і відомий своєю надзвичайною красою та захоплюючими видами.</p>
+            </div>
+
+
+            <div class="left-text zurich">
+                <h3>Цюрих</h3>
+                <p>найбільше місто Швейцарії, відоме своєю багатою культурною спадщиною та мальовничим озером.</p>
+            </div>
+            <div class="right-image">
+                <img src="https://images.unsplash.com/photo-1556918380-e1eea4592bb3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" />
+            </div>
+
+            
+            <div class="left-image">
+                <img src="https://images.unsplash.com/photo-1541614256854-6fbf99e006b5?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" />
+            </div>
+            
+            <div class="right-text">
+                <h3>Женева</h3>
+                <p>гарне місто на березі Женевського озера, що є культурним і дипломатичним центром Швейцарії.</p>
+            </div>
+        </div>    
+    </div>
+
+    <div class="bottom-image">
+        <img class="last-img" src="https://images.unsplash.com/photo-1514496959998-c01c40915c5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    
+
+
+    <script src="scripts/script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Tenor+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .top_image img{
+    width: 100%;
+} */
+
+.top_image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.top_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.top_image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  height: 5%;
+  background: linear-gradient(to bottom, #e7e0d8 100%, #e7e0d8 100%);
+  filter: blur(5px); 
+  z-index: 10;
+}
+
+body {
+    font-family: 'Tenor Sans', sans-serif;
+    background-color: #e7e0d8;
+    /* height: 4000px; */
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    padding-block: 5px;
+    background-color: rgba(55, 57, 61, 0.361);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header.not-transparent {
+    background-color: #848484e5;
+}
+  
+  .logo {
+    font-family: 'Shantell Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+  }
+  
+  .nav-links {
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    background-color: #949494;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+  input,
+  select,
+  button{
+    border: 1px solid #898989;
+    /* border: none; */
+    outline: none;
+    background-color: #f1eeee;
+    width: 20%;
+    font-weight: 1em;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-family: 'Tenor Sans', sans-serif;
+  }
+
+  button:hover{
+    border: 1px solid #454545;
+    background-color: #949494;
+  }
+
+  .way{
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .text{
+    text-align: center;
+  }
+
+  .image{
+    width: 50%;
+    text-align: center;
+  }
+
+  .image img{
+    width: 80%;
+  }
+
+  .line-container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .point-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 10%;
+    column-gap: 100px;
+    position: absolute;
+    align-items: center;
+    /* text-align: center; */
+    top: 0;
+    width: 100%;
+}
+
+.right-image,
+.left-image {
+  width: 80%; 
+  height: 90%; 
+  overflow: hidden; 
+}
+
+.left-image {
+  padding-left: 10%;
+}
+
+.right-image img,
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-text {
+  text-align: left;
+    font-size: 1.2em; 
+    padding-left: 20%;
+    color: black; 
+    width: 60%;
+}
+
+.right-text {
+  text-align: right;
+  font-size: 1.2em; 
+  color: black; 
+  width: 65%;
+}
+
+.zurich{
+  margin-top: -100px;
+}
+
+h3{
+  padding-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bottom-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 250px;
+}
+
+.bottom-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.bottom-image::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 110%;
+  height: 15%;
+  background: linear-gradient(to bottom, #D9D9D9 100%, #D9D9D9 100%);
+  filter: blur(15px); 
+  z-index: 10;
+}
