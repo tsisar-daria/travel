@@ -1,7 +1,7 @@
 # Сайт для туру по Швейцарії
 
 <p align="center">
-<img src="https://github.com/tsisar-daria/travel/blob/main/image/2024-11-07%20(1).png">
+  <img width="80%" src="https://github.com/tsisar-daria/travel/blob/main/image/2024-11-07%20(1).png">
 </p>
 
 ## Опис
